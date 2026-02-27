@@ -28,3 +28,46 @@ let username = null
 console.log("What is the username?", username)
 
 //// Assignment research and come up with examples on Object and Array data types. Show how to access items of the object and of an array.
+
+//Array = a variable like structure that can hold more than 1 value.
+let fruits = ["apple","orange","banana"];
+
+fruits[3]="coconut";
+fruits.push("coconut");
+fruits.pop();
+fruits.unshift("mango")
+console.log(fruits);
+console.log(fruits[0]);
+console.log(fruits[1]);
+console.log(fruits[2]);
+console.log(fruits[3]);
+
+let numOfFruits = fruits.length;
+console.log(numOfFruits);
+
+let index = fruits.indexOf("banana");
+console.log(index);
+fruits.sort().reverse()
+
+for(let fruit of fruits){
+    console.log(fruit);
+}
+
+//objcects
+const fruit = [{name:"apple",color:"red",calories:95},
+                {name:"orange",color:"orange",calories:90},
+                {name:"banana",color:"yellow",calories:105},
+                {name:"apple",color:"red",calories:95},
+                {name:"watermelon",color:"green",calories:80}];
+
+
+fruit.push({name: "grapes",color:"purple",calories:62});
+console.log(fruit);
+
+fruit.forEach(fruit => console.log(fruit.name))
+fruit.forEach(fruit => console.log(fruit.color))
+fruit.forEach(fruit => console.log(fruit.calories))
+
+
+
+
