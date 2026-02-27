@@ -1,6 +1,19 @@
+//Triple equal sign- checks whether two value are equal in both value and typel
+let a = 10;
+let b = 10;
+console.log(a === b);
+
+let x = 10
+let y = "10"
+console.log(x === y)
+
+
+
+
+
 let distance = 900
 
-if(distance > 0 && distance <= 100){
+if(distance >= 0 && distance <= 100){
     console.log("Pay 5 USD")
 }
 else if(distance >= 101 && distance <= 500){
